@@ -4,13 +4,16 @@ body {
     line-height: 1;
   }
   
-  textarea{
+  .col-10{
     background: transparent;
     border: none;
     resize: none;
     color: #000000;
-    border-left: 1px solid black;
+    border-left: 1px solid rgb(196, 194, 194);
+    border-top: 1px solid rgb(196, 194, 194);
+    border-bottom: 1px solid rgb(184, 184, 184);
     padding: 10px;
+    white-space: pre-wrap;
   }
   
   .jumbotron {
@@ -26,6 +29,7 @@ body {
   }
   
   .time-block{
+    padding: 23px;
     text-align: center;
     border-radius: 15px;
   }
