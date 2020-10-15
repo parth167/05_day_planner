@@ -3,31 +3,34 @@
 
 //----define moment varibles used to show time----//
 var date = moment().format("MMM Do YY");
- var currentTime = moment().format('H');
- console.log(currentTime);
+// var currentTime = moment().format('H');
+// console.log(currentTime);
 
 //-------append date----------//
-$("#currentDay").append(date);
+$("#currentDay").text(date);
+//console.log(currentDay);
 
 
 //---------background Updater------------------------//
 
-var timeOfday = ["9", "10", "11", "12", "13", "14", "15", "16", "17"]
+var timeOfday = ["8","9", "10", "11", "12", "13", "14", "15", "16", "17"]
 updatetime();
-
+//-----function for time-----//
 function updatetime() {
   var currentTime = moment().format('H');
   for(var i = 0; i < timeOfday.length; i++) {
-
+    //------future time-------//
     if (parseInt(timeOfday[i]) > currentTime) {
       $("#" + timeOfday[i]).attr("style", "background-color: #58ce7b");
 
 
     }
+    //------past time-------//
     else if (parseInt(timeOfday[i]) < currentTime) {
       $("#" + timeOfday[i]).attr("style", "background-color: lightgray");
 
     }
+    //------current time -------//
     else if (parseInt(timeOfday[i]) == currentTime) {
       $("#" + timeOfday[i]).attr("style", "background-color: #fc665e");
     
@@ -36,29 +39,21 @@ function updatetime() {
 }
 
 //--onclick event to save user input to local storage---//
-$(".rowBtn").on("click", function() {
-    var timeOfday = $(this).parent().attr("id");
-    var textContent = $("input").val().trim();
 
-    localStorage.setItem(timeOfday, textContent);
-    console.log(timeOfday, textContent);
-});
+function saveButton() {
+   
+  $(".event-input").each(function() {
+  var events = $(this).attr("id");
+  $(this).val(localStorage.getItem(events));
+  });
 
-//-------Getting individual childern and setting to parent-----//
-  $("#9am").children("input").val(localStorage.getItem("9am"));
+  $(".saveBtn").on("click", function() {
+      var data = $(this).siblings(".event-input").val();
+      var dataId = $(this).siblings(".event-input").attr("id");
 
-  $("#10am").children("input").val(localStorage.getItem("10am"));
+      localStorage.setItem(dataId, data);
+     
+  })
+}
 
-  $("#11am").children("input").val(localStorage.getItem("11am"));
-
-  $("#12pm").children("input").val(localStorage.getItem("12pm"));
-
-  $("#1pm").children("input").val(localStorage.getItem("1pm"));
-
-  $("#2pm").children("input").val(localStorage.getItem("2pm"));
-
-  $("#3pm").children("input").val(localStorage.getItem("3pm"));
-
-  $("#4pm").children("input").val(localStorage.getItem("4pm"));
-
-  $("#5pm").children("input").val(localStorage.getItem("5pm"));
+saveButton()
