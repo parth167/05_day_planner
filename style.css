@@ -1,61 +1,71 @@
 body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-    line-height: 1;
-  }
+  font-family: 'Merriweather', sans-serif;
+  font-size: 15px;
+  line-height: 1;
+}
+
+textarea{
+  background: transparent;
+  border: none;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid #08235c;
+  padding: 10px;
+}
+.h1{
+  color: orangered;
+}
+.jumbotron {
+  text-align: center;
+  background-color:white;
+  color: rgb(87, 87, 255);
+  border-radius: 0;
+  border-bottom: 3px solid orangered;
+}
+
+.description{
+  white-space: pre-wrap;
+}
+
+.event-input{
+  text-align: center;
+  border-radius: 15px;
+  color: #08235c;
+  border-style: outset;
   
-  .col-10{
-    background: transparent;
-    border: none;
-    resize: none;
-    color: #000000;
-    border-left: 1px solid rgb(196, 194, 194);
-    border-top: 1px solid rgb(196, 194, 194);
-    border-bottom: 1px solid rgb(184, 184, 184);
-    padding: 10px;
-    white-space: pre-wrap;
-  }
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;;
+}
+
+.hour {
+  background-color: #ffffff;
+  color: #000000;
+  border-style: inset;
+  border-color: orange;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.saveBtn {
   
- /* .jumbotron {
-    text-align: center;
-    background-color: transparent;
-    color: black;
-    border-radius: 0;
-    border-bottom: 10px solid black;
-  }
+  border-style: inset;
+  border-color: orange;
+  border-radius: 12px;
+  background-color: #1779a7;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 25px;
+  transition: all .1s ease-in-out;
   
-  .description{
-    white-space: pre-wrap;
-  }*/
-  
-  #time{
-    padding: 23px;
-    text-align: center;
-    border-radius: 15px;
-  }
-  
-  .row {
-    white-space: pre-wrap;
-    height: 80px;
-    border-top: 1px solid white;;
-  }
-  
-  .hour {
-    background-color: #ffffff;
-    color: #000000;
-    border-top: 1px dashed #000000;
-  }
-  
-  .rowBtn {
-    border-left: 1px solid black;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    background-color: #06AED5;
-    color: white;
-  }
-  
-  .rowBtn i:hover {
-    font-size: 20px;
-    transition: all .3s ease-in-out;
-  }
-  
+}
+
+
+
+
