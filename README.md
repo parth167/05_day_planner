@@ -4,7 +4,7 @@
 
 
 # URL for the live app is here:
-https://parth167.github.io/code_quiz_master/
+https://parth167.github.io/05_day_planner/
 
  
 ## Project description
