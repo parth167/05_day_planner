@@ -1,6 +1,6 @@
 # 05_day_planner
 
-*  For this repository, I have created a simple calander that allows the user to save events for each hour of the day.which is  run's in the browser and feature's dynamically updated HTML and CSS powered by jQuery. In addition the app display's standard business hours (9 a.m. to 5 p.m.) along the left hand side of each input row. Depending on the time of day, the schedule input feilds update their color indicating to the user wether items are in the past, present or future.
+*  For this repository, I have created a simple calander that allows the user to save events for each hour of the day.which is  run's in the browser and feature's dynamically updated HTML and CSS powered by jQuery. In addition the app display's standard business hours (8 a.m. to 5 p.m.) along the left hand side of each input row. Depending on the time of day, the schedule input feilds update their color indicating to the user wether items are in the past, present or future.
 
 
 # URL for the live app is here:
@@ -11,7 +11,7 @@ https://parth167.github.io/05_day_planner/
 
 ![Screenshot of main page for code quiz](https://github.com/parth167/05_day_planner/blob/main/assest/image/main.jpg)
 
-*  As on this applicaton  display's standard business hours (9 a.m. to 5 p.m.) along the left hand side of each input row. 
+*  As on this applicaton  display's standard business hours (8 a.m. to 5 p.m.) along the left hand side of each input row. 
 
 ![Screenshot of main page for code quiz](https://github.com/parth167/05_day_planner/blob/main/assest/image/main2.jpg) 
 
